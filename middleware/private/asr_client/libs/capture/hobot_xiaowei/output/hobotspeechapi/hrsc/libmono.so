@@ -1,0 +1,246 @@
+sil     sil
+a_t1    vowel
+a_t2    vowel
+a_t3    vowel
+a_t4 vowel
+aa_t0 consonant
+ai_t1 vowel
+ai_t2 vowel
+ai_t3 vowel
+ai_t4 vowel
+an_t1 vowel
+an_t2 vowel
+an_t3 vowel
+an_t4 vowel
+ang_t1 vowel
+ang_t2 vowel
+ang_t3 vowel
+ang_t4 vowel
+ao_t1 vowel
+ao_t2 vowel
+ao_t3 vowel
+ao_t4 vowel
+b_t0 consonant
+c_t0 consonant
+ch_t0 consonant
+d_t0 consonant
+e_t1 vowel
+e_t2 vowel
+e_t3 vowel
+e_t4 vowel
+ee_t0 consonant
+ei_t1 vowel
+ei_t2 vowel
+ei_t3 vowel
+ei_t4 vowel
+en_t1 vowel
+en_t2 vowel
+en_t3 vowel
+en_t4 vowel
+eng_t1 vowel
+eng_t2 vowel
+eng_t3 vowel
+eng_t4 vowel
+er_t2 vowel
+er_t3 vowel
+er_t4 vowel
+f_t0 consonant
+g_t0 consonant
+h_t0 consonant
+i_t1 vowel
+i_t2 vowel
+i_t3 vowel
+i_t4 vowel
+ia_t1 vowel
+ia_t2 vowel
+ia_t3 vowel
+ia_t4 vowel
+ian_t1 vowel
+ian_t2 vowel
+ian_t3 vowel
+ian_t4 vowel
+iang_t1 vowel
+iang_t2 vowel
+iang_t3 vowel
+iang_t4 vowel
+iao_t1 vowel
+iao_t2 vowel
+iao_t3 vowel
+iao_t4 vowel
+ie_t1 vowel
+ie_t2 vowel
+ie_t3 vowel
+ie_t4 vowel
+ii_t0  consonant
+in_t1 vowel
+in_t2 vowel
+in_t3 vowel
+in_t4 vowel
+ing_t1 vowel
+ing_t2 vowel
+ing_t3 vowel
+ing_t4 vowel
+iong_t1 vowel
+iong_t2 vowel
+iong_t3 vowel
+iong_t4 vowel
+iu_t1 vowel
+iu_t2 vowel
+iu_t3 vowel
+iu_t4 vowel
+ix_t1 vowel
+ix_t2 vowel
+ix_t3 vowel
+ix_t4 vowel
+iy_t1 vowel
+iy_t2 vowel
+iy_t3 vowel
+iy_t4 vowel
+iz_t4 vowel
+j_t0 consonant
+k_t0 consonant
+l_t0 consonant
+m_t0 consonant
+n_t0 consonant
+o_t1 vowel
+o_t2 vowel
+o_t3 vowel
+o_t4 vowel
+ong_t1 vowel
+ong_t2 vowel
+ong_t3 vowel
+ong_t4 vowel
+oo_t0 consonant
+ou_t1 vowel
+ou_t2 vowel
+ou_t3 vowel
+ou_t4 vowel
+p_t0 consonant
+q_t0 consonant
+r_t0 consonant
+s_t0 consonant
+sh_t0 consonant
+t_t0 consonant
+u_t1 vowel
+u_t2 vowel
+u_t3 vowel
+u_t4 vowel
+ua_t1 vowel
+ua_t2 vowel
+ua_t3 vowel
+ua_t4 vowel
+uai_t1 vowel
+uai_t2 vowel
+uai_t3 vowel
+uai_t4 vowel
+uan_t1 vowel
+uan_t2 vowel
+uan_t3 vowel
+uan_t4 vowel
+uang_t1 vowel
+uang_t2 vowel
+uang_t3 vowel
+uang_t4 vowel
+ueng_t1 vowel
+ueng_t4 vowel
+ui_t1 vowel
+ui_t2 vowel
+ui_t3 vowel
+ui_t4 vowel
+un_t1 vowel
+un_t2 vowel
+un_t3 vowel
+un_t4 vowel
+uo_t1 vowel
+uo_t2 vowel
+uo_t3 vowel
+uo_t4 vowel
+uu_t0 consonant
+v_t1 vowel
+v_t2 vowel
+v_t3 vowel
+v_t4 vowel
+van_t1 vowel
+van_t2 vowel
+van_t3 vowel
+van_t4 vowel
+ve_t1 vowel
+ve_t2 vowel
+ve_t3 vowel
+ve_t4 vowel
+vn_t1 vowel
+vn_t2 vowel
+vn_t3 vowel
+vn_t4 vowel
+vv_t0 consonant
+x_t0 consonant
+z_t0 consonant
+zh_t0 consonant
+sp sp
+fil_sil
+fil_a_t0
+fil_aa_t0
+fil_ai_t0
+fil_an_t0
+fil_ang_t0
+fil_ao_t0
+fil_b_t0
+fil_c_t0
+fil_ch_t0
+fil_d_t0
+fil_e_t0
+fil_ee_t0
+fil_ei_t0
+fil_en_t0
+fil_eng_t0
+fil_er_t0
+fil_f_t0
+fil_g_t0
+fil_h_t0
+fil_i_t0
+fil_ia_t0
+fil_ian_t0
+fil_iang_t0
+fil_iao_t0
+fil_ie_t0
+fil_ii_t0
+fil_in_t0
+fil_ing_t0
+fil_iong_t0
+fil_iu_t0
+fil_ix_t0
+fil_iy_t0
+fil_iz_t0
+fil_j_t0
+fil_k_t0
+fil_l_t0
+fil_m_t0
+fil_n_t0
+fil_o_t0
+fil_ong_t0
+fil_oo_t0
+fil_ou_t0
+fil_p_t0
+fil_q_t0
+fil_r_t0
+fil_s_t0
+fil_sh_t0
+fil_t_t0
+fil_u_t0
+fil_ua_t0
+fil_uai_t0
+fil_uan_t0
+fil_uang_t0
+fil_ueng_t0
+fil_ui_t0
+fil_un_t0
+fil_uo_t0
+fil_uu_t0
+fil_v_t0
+fil_van_t0
+fil_ve_t0
+fil_vn_t0
+fil_vv_t0
+fil_x_t0
+fil_z_t0
+fil_zh_t0

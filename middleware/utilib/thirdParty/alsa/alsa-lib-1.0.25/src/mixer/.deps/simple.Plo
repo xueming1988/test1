@@ -1,0 +1,340 @@
+simple.lo: simple.c \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdio.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.3.1/include/stddef.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/types.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/typesizes.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/libio.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/_G_config.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/wchar.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.3.1/include/stdarg.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio_lim.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sys_errlist.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdlib.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/waitflags.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/waitstatus.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/endian.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/endian.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap-16.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/xlocale.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/types.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/time.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/select.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/select.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sigset.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/time.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/sysmacros.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/pthreadtypes.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/alloca.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-bsearch.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-float.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/unistd.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/posix_opt.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/environments.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/confname.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/getopt.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/string.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/string.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/string2.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/fcntl.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/fcntl.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/fcntl-linux.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/uio.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stat.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/ioctl.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/ioctls.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/ioctls.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/ioctls.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/ioctl.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/ioctl.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/ioctl.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/ioctl-types.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/ttydefaults.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/math.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/math-vector.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/libm-simd-decl-stubs.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/huge_val.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/huge_valf.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/huge_vall.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/inf.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/nan.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/mathdef.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/mathcalls.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/mathinline.h \
+ mixer_local.h ../../include/local.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/assert.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/poll.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/poll.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/errno.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/errno.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/errno.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/errno.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/errno.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/errno-base.h \
+ ../../include/config.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/dlfcn.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/dlfcn.h \
+ ../../include/sound/asound.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/types.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/types.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/int-ll64.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/bitsperlong.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/bitsperlong.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/posix_types.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/stddef.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/posix_types.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/posix_types.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/time.h \
+ ../../include/sound/asoundef.h ../../include/alsa-symbols.h \
+ ../../include/version.h ../../include/global.h \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/timex.h \
+ ../../include/input.h ../../include/output.h ../../include/error.h \
+ ../../include/conf.h ../../include/pcm.h ../../include/pcm_plugin.h \
+ ../../include/rawmidi.h ../../include/timer.h ../../include/hwdep.h \
+ ../../include/control.h ../../include/mixer.h ../../include/seq_event.h \
+ ../../include/seq.h ../../include/sound/asequencer.h \
+ ../../include/seqmid.h ../../include/seq_midi_event.h \
+ ../../include/list.h mixer_simple.h ../../include/mixer_abst.h
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdio.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.3.1/include/stddef.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/types.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/typesizes.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/libio.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/_G_config.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/wchar.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.3.1/include/stdarg.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio_lim.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sys_errlist.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdlib.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/waitflags.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/waitstatus.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/endian.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/endian.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap-16.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/xlocale.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/types.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/time.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/select.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/select.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sigset.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/time.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/sysmacros.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/pthreadtypes.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/alloca.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-bsearch.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-float.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/unistd.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/posix_opt.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/environments.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/confname.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/getopt.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/string.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/string.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/string2.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/fcntl.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/fcntl.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/fcntl-linux.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/uio.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stat.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/ioctl.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/ioctls.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/ioctls.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/ioctls.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/ioctl.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/ioctl.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/ioctl.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/ioctl-types.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/ttydefaults.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/math.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/math-vector.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/libm-simd-decl-stubs.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/huge_val.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/huge_valf.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/huge_vall.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/inf.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/nan.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/mathdef.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/mathcalls.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/mathinline.h:
+
+mixer_local.h:
+
+../../include/local.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/assert.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/poll.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/poll.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/errno.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/errno.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/errno.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/errno.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/errno.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/errno-base.h:
+
+../../include/config.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/dlfcn.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/dlfcn.h:
+
+../../include/sound/asound.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/types.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/types.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/int-ll64.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/bitsperlong.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/bitsperlong.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/posix_types.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/stddef.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/posix_types.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/posix_types.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/time.h:
+
+../../include/sound/asoundef.h:
+
+../../include/alsa-symbols.h:
+
+../../include/version.h:
+
+../../include/global.h:
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/timex.h:
+
+../../include/input.h:
+
+../../include/output.h:
+
+../../include/error.h:
+
+../../include/conf.h:
+
+../../include/pcm.h:
+
+../../include/pcm_plugin.h:
+
+../../include/rawmidi.h:
+
+../../include/timer.h:
+
+../../include/hwdep.h:
+
+../../include/control.h:
+
+../../include/mixer.h:
+
+../../include/seq_event.h:
+
+../../include/seq.h:
+
+../../include/sound/asequencer.h:
+
+../../include/seqmid.h:
+
+../../include/seq_midi_event.h:
+
+../../include/list.h:
+
+mixer_simple.h:
+
+../../include/mixer_abst.h:

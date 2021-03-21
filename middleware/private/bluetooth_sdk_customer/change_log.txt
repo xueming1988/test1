@@ -1,0 +1,60 @@
+linkplay bluetooth version 09 date:2020-4-9
+change log:
+1.fixed bsa_server bugs
+2.ringbuffer cache pcm write in bt_demo
+
+
+linkplay bluetooth version 08 date:2020-1-9
+change log:
+1.support AAC Decoder
+2.add pcm capture instance
+3.ble interface added
+
+linkplay bluetooth version 07 date:2019-12-11
+change log:
+1.add more a2dp sink events
+2.fixed pcm_open_call_fn call many times
+
+linkplay bluetooth version 06 date:2019-11-12
+change log:
+1.modify pcm callback APIs.
+2.update bsa_server and libbsa for some issue fixed.
+
+linkplay bluetooth version 05 date:2019-6-03
+change log:
+1.bsa_server fixed wrong event at the scenario source & sink services both running
+
+linkplay bluetooth version 05 date:2019-5-13
+change log:
+1.libbsa use poll replace select
+
+linkplay bluetooth version 05 date:2019-5-07
+change log:
+1.add linkplay_bluetooth_av_rc_change
+
+linkplay bluetooth version 04 date:2019-4-19
+change log:
+1.Modify BT stream source to the capture loop PCM
+
+linkplay bluetooth version 04 date:2019-4-16
+change log:
+1.add set_av_abs_vol in example code
+
+linkplay bluetooth version 03 date:2018-11-9
+change log:
+1.Modify linkplay_bluetooth_start_scan scan only the devices included a2dp services.
+2.Dynamic sample rate in bt source mode, support 44100/48000 this decided by sink devices.
+3.Fixed Sink Mode avrcp event send twice.
+4.The bt demo example support av pcm transfer start/suspend
+
+---------------------------------------------------------------------------------
+linkplay bluetooth version 02 date:2018-10-11
+change log:
+1.Fixed linkplay_bluetooth_source_start_stream some times deadlock
+2.Add BT_SOURCE_AV_START_EVT/BT_SOURCE_AV_STOP_EVT event
+3.Add linkplay_bluetooth_set_debug_level to set debug level
+
+---------------------------------------------------------------------------------
+linkplay bluetooth version 01
+change log:
+1. Initialize version

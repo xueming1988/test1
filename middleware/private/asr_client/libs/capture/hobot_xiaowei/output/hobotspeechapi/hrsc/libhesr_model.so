@@ -1,0 +1,17 @@
+###################################################################################
+[WAKEUP_CUSTOME_MODEL_CONF]
+
+MODEL_NUM=1
+
+MODEL1_NAME=xiaowei_pcen
+MODEL1_TYPE=cnn
+MODEL1_PARAMS=model.params
+MODEL1_JSON=model.json
+MODEL1_MEANVAR=meanvar_prior
+MODEL1_SKIP_NUM=5
+MODEL1_BATCH=4
+MODEL1_LEFT_CONTEXT=20
+MODEL1_RIGHT_CONTEXT=20
+MODEL1_CHANNEL=3
+MODEL1_WIDTH=40
+

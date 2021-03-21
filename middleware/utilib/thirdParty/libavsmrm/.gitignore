@@ -1,0 +1,14 @@
+out/
+boost/src/
+liburiparser/src/Makefile.in
+liburiparser/src/aclocal.m4
+liburiparser/src/build-aux/
+liburiparser/src/configure
+liburiparser/src/doc/Makefile.in
+liburiparser/src/doc/aclocal.m4
+liburiparser/src/doc/configure
+liburiparser/src/m4/libtool.m4
+liburiparser/src/m4/ltoptions.m4
+liburiparser/src/m4/ltsugar.m4
+liburiparser/src/m4/ltversion.m4
+liburiparser/src/m4/lt~obsolete.m4

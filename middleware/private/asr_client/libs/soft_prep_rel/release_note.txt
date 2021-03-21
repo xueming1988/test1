@@ -1,0 +1,50 @@
+Release Note
+
+version 1.1.0
+	1. initial release.
+	
+version 1.2.0
+	1. add void * opaque parameter in callcack definition.
+
+version 1.3.0
+	1. add 2ch mic raw audio data capture callback function. audio format is S16_LE, 2ch, 16KHz
+
+version 1.4.0
+	1. shrink Alsa period of capture to remove some lattency.
+
+version 1.5.0
+	1. update soft pre process library
+
+version 1.6.0
+	1. wait 100ms in deinit for release all resource.
+
+version 1.7.0
+	1. use the 2ch's information as reference signal.
+
+version 1.8.0
+	1. extend the wwe callback parameter
+
+version 1.9.0
+        1. support double trigger feature
+
+version 1.10.0
+	1. fine tune the capture parameter
+
+version 1.11.0
+        1. add configFile setting interface
+
+version 1.12.0
+	1. change parameter type
+
+version 1.13.0
+	1. change mic audio format to S16_LE, 16KHz for rel_d
+
+version 1.14.0
+	1. use dmicarray as capture device for mic boost tuning
+
+version 1.15.0
+        1. IRBIS lib detect signal of 2 mic
+
+version 1.16.1
+        1. fix yandexmini deinit deadlock
+

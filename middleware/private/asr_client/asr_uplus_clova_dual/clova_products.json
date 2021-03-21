@@ -1,0 +1,19 @@
+{
+"products":[
+	{
+		"project":"default",
+		"name":"Naver Donut",
+		"id":"dade0b2bc39a4d7bb73138600558b3b8",
+		"secret":"522c3e5b9eb8ee0749be6ac63b99f0bf35dfca1c12239b8c67b814bcf7e1ac61",
+		"url":""
+	},
+	{
+		"project":"LGUPLUS",
+		"name":"Lguplus Donut",
+		"id":"3465269e127ceb579cfd0e5a503b9f08",
+		"secret":"b82c1d8188a41cbc07feca85c2d45108e7ed1f7b333a475bbdc1faa3f49f3bca",
+		"url":""
+	}
+]
+}
+

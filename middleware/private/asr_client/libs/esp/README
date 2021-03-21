@@ -1,0 +1,53 @@
+/*
+ * Copyright 2017 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+ *
+ * You may not use this file except in compliance with the terms and conditions set forth in the accompanying LICENSE.TXT file.
+ *
+ * THESE MATERIALS ARE PROVIDED ON AN "AS IS" BASIS.  AMAZON SPECIFICALLY DISCLAIMS, WITH RESPECT TO THESE MATERIALS, ALL
+ * WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+ * PURPOSE, AND NON-INFRINGEMENT.
+ */
+
+
+// Prepping build folder
+cd <ROOT> 
+mkdir build
+
+// Copy streams to build folder:
+cp -r ./Streams/* ./build/
+
+//* Setting the parameters:
+//* In the main.cpp file, update the following parameters */
+int freqSamp = 16000; // Supports only 16000
+int frameSize_ms = 8; // Supports only 8ms, 15ms or 16ms
+
+// Select one of the iput files to be processed in main.cpp:
+//FILE * infile = fopen("MixDown.pcm","rb"); // Raw Mixdown file
+//FILE * infile = fopen("Noise.pcm","rb");   // Noise only
+FILE * infile = fopen("Mic_16bit.pcm","rb"); // Raw mixdown recorded on Alexa enabled device
+
+// Building the code:
+cd build
+cmake ../
+make
+
+// Execute:
+./VAD
+
+// Inputs are 1 channel 16 bits signed PCM files
+MixDown.pcm
+Noise.pcm
+Mic_16bit.pcm
+
+// Input files need to be in the build directory. This is done in the copy streams to build folder step above.
+
+// Output is generated in the build directory. It's named "energyVal.csv".
+
+// Output file contains:
+   // Frame Number, 
+   // Voiced Energy, 
+   // Ambient Energy, 
+   // Voice Activity Decision, 
+   // Current Frame Energy.
+
+// Reference files can be found in Reference_Output folder

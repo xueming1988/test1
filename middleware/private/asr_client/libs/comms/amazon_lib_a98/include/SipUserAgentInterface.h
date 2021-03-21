@@ -1,0 +1,89 @@
+#ifndef SIP_USER_AGENT_INTERFACE_H_
+#define SIP_USER_AGENT_INTERFACE_H_
+
+#include "AlexaCommsAPI.h"
+
+#include "AlexaCommsErrorCode.h"
+#include "AlexaCommsLibEnums.h"
+#include "AlexaCommsLibStructs.h"
+#include "SipUserAgentEventObserverInterface.h"
+#include "SipUserAgentFocusManagerObserverInterface.h"
+#include "SipUserAgentStateObserverInterface.h"
+#include "LogObserverInterface.h"
+#ifdef ENABLE_METRIC_OBSERVER
+#include "MetricObserverInterface.h"
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_create(SipUserAgentInterfaceCreateParameters params);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_delete();
+
+ALEXACOMMSLIB_API bool SipUserAgentInterface_isInitialized();
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_addSipUserAgentEventObserver(SipUserAgentEventObserverInterface observer);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_removeSipUserAgentEventObserver(SipUserAgentEventObserverInterface observer);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_addSipUserAgentStateObserver(SipUserAgentStateObserverInterface observer);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_removeSipUserAgentStateObserver(SipUserAgentStateObserverInterface observer);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_addSipUserAgentFocusManagerObserver(SipUserAgentFocusManagerObserverInterface observer);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_removeSipUserAgentFocusManagerObserver(SipUserAgentFocusManagerObserverInterface observer);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_addSipUserAgentNativeCallObserver(SipUserAgentNativeCallObserverInterface observer);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_removeSipUserAgentNativeCallObserver(SipUserAgentNativeCallObserverInterface observer);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_addLogObserver(LogObserverInterface observer);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_removeLogObserver(LogObserverInterface observer);
+
+#ifdef ENABLE_METRIC_OBSERVER
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_addMetricObserver(MetricObserverInterface observer);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_removeMetricObserver(MetricObserverInterface observer);
+#endif
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_notifyNativeCallRinging(NativeCallDirection nativeCallDirection, const char* phoneNumber);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_notifyNativeCallActivated();
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_notifyNativeCallTerminated();
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_notifyNativeCallResult(NativeCallEventType eventType, AlexaCommsErrorCode resultCode);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_handleDirective(const char* name, const char* payload);
+
+ALEXACOMMSLIB_API SipUserAgentStateContext SipUserAgentInterface_getSipUserAgentStateContext();
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_handleNetworkConnectivityEvent(bool connected, const char* ipAddress);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_handleAvsConnectivityEvent(bool connected);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_acceptCall();
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_stopCall();
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_sendDTMF(DTMFTone dtmf);
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_muteOther();
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_unmuteOther();
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_muteSelf();
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_unmuteSelf();
+
+ALEXACOMMSLIB_API AlexaCommsErrorCode SipUserAgentInterface_handleDCMMetricsRegionChangeEvent(const char* region);
+
+#ifdef __cplusplus
+} // extern "C"
+#endif
+
+#endif // SIP_USER_AGENT_INTERFACE_H_

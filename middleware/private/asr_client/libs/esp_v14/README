@@ -1,0 +1,30 @@
+/*
+ * Copyright 2017 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+ *
+ * You may not use this file except in compliance with the terms and conditions set forth in the accompanying LICENSE.TXT file.
+ *
+ * THESE MATERIALS ARE PROVIDED ON AN "AS IS" BASIS.  AMAZON SPECIFICALLY DISCLAIMS, WITH RESPECT TO THESE MATERIALS, ALL
+ * WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+ * PURPOSE, AND NON-INFRINGEMENT.
+ */
+
+
+Building the code:
+cd <ROOT> 
+mkdir build
+cd build
+cmake ../
+make
+
+Execute:
+./VAD
+
+Input are:
+MixDown.pcm
+Noise.pcm
+
+Input files need to be in the build directory.
+
+Output is gerated in the build directory. It's named energyVal.csv.
+
+Output contains Voice Activity Decision.

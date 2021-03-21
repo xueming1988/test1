@@ -1,0 +1,66 @@
+Obj/main.d Obj/main.o: main.c \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/wm_util.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/wm_api.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/wm_error.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/volume_type.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/focus_manage.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/wm_context.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/caiman.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/ccaptureGeneral.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/lp_list.h \
+ ../libs/capture/save_record_file.h alexa_request_json.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/json.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/debug.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/bits.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/linkhash.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/json_object.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/json_inttypes.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/json_config.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/printbuf.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/arraylist.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/json_util.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/json_pointer.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/json_tokener.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/json_object_iterator.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/json-c/json_c_version.h \
+ ../libs/dsp/conexant/cxdish_ctrol.h alexa_json_common.h alexa_cmd.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/mv_message.h \
+ alexa.h alexa_debug.h alexa_api2.h alexa_authorization.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/lpcrypto.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/aes.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/opensslconf.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/sha.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/e_os2.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/hmac.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/evp.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/ossl_typ.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/symhacks.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/bio.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/crypto.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/stack.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/safestack.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/opensslv.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/objects.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/obj_mac.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/asn1.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/bn.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/buffer.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/engine.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/rsa.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/dsa.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/dh.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/ec.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/rand.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/ui.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/err.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/lhash.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/x509.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/x509_vfy.h \
+ /home/liang/work/a98_prj/linkplay_sdk/opensource/a98/include/openssl/pkcs7.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/lpcfg.h \
+ asr_state.h asr_config.h avs_player.h alexa_system.h \
+ ../libs/capture/playback_bt_hfp.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/file_record.h \
+ alexa_alert.h \
+ /home/liang/work/a98_prj/out/a98_alexa_h/install/dist/release/include/wm_api.h \
+ alexa_cfg.h ../libs/capture/intercom_record.h

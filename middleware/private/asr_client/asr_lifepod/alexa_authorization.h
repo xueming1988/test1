@@ -1,0 +1,57 @@
+#ifndef __ALEXA_AUTHORIZATION_H__
+#define __ALEXA_AUTHORIZATION_H__
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*
+ * create a thread to get alexa access token and refreshtoken freom amazon server
+ */
+int LifepodAuthorizationInit(void);
+
+int LifepodLogInWithAuthcode(char *data);
+
+/*
+ * log out from AVS server
+ */
+int LifepodAuthorizationLogOut(int flags);
+
+/*
+  * get the refresh token from result
+  *  return the new refreshtoken
+  */
+char *LifepodGetRefreshToken(void);
+
+/*
+  *  get the access token from result
+  *  return the new accesstoken
+  */
+char *LifepodGetAccessToken(void);
+
+/*
+  *  try to get alexa account info from flash
+  */
+void LifepodGetDeviceInfo(void);
+
+/*
+  *  save alexa account info to flash
+  */
+void AlexaSetDeviceInfo(char *device_id, char *client_id, char *client_secret, char *server_url);
+
+int AlexaLogInWithParam(char *data);
+
+int LifepodAuthorizationLogin(char *data);
+
+char *LifepodGetDeviceInfoJson(void);
+
+int pco_delete_report(void);
+int pco_enable_skill(char *data);
+int pco_get_skill_enable_status(char *data);
+int pco_disable_skill(char *data);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

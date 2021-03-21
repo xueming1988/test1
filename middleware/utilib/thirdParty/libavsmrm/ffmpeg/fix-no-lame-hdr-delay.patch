@@ -1,0 +1,29 @@
+Strip decoder delay (529 samples) if LAME header is missing.
+
+diff --git a/libavformat/mp3dec.c b/libavformat/mp3dec.c
+index a5c4f2e..d3ad5a3 100644
+--- a/libavformat/mp3dec.c
++++ b/libavformat/mp3dec.c
+@@ -326,6 +326,22 @@ static int mp3_parse_vbr_tags(AVFormatContext *s, AVStream *st, int64_t base)
+     mp3_parse_info_tag(s, st, &c, spf);
+     mp3_parse_vbri_tag(s, st, base);
+ 
++    if (s->wha_version >= 1 && st->start_skip_samples == 0)
++    {
++        av_log(s, AV_LOG_DEBUG, "no LAME hdr\n");
++        mp3->start_pad = 0;
++        mp3->  end_pad = 0;
++        st->start_skip_samples = mp3->start_pad + 528 + 1;
++        if (mp3->frames) {
++            st->first_discard_sample = -mp3->end_pad + 528 + 1 + mp3->frames * (int64_t)spf;
++            st->last_discard_sample = mp3->frames * (int64_t)spf;
++        }
++        if (!st->start_time)
++            st->start_time = av_rescale_q(st->start_skip_samples,
++                                            (AVRational){1, c.sample_rate},
++                                            st->time_base);
++    }
++
+     if (!mp3->frames && !mp3->header_filesize)
+         return -1;
+ 

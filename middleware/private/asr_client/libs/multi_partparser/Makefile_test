@@ -1,0 +1,52 @@
+#
+# Makefile to build
+#
+
+#Directory definition
+CUR_DIR		:= .
+TOP_DIR		:=$(BUILD_TOP_DIR)
+OBJ_DIR 	:=$(CUR_DIR)/Obj/
+INSTALL_DIR	:=$(RELEASE_DIR)/lib
+INCLUDE_DIR :=$(RELEASE_DIR)/include
+
+include $(TOP_DIR)/Rule.make
+include $(TOP_DIR)/Makefile.Inc
+
+INCLUDES = 	-I$(RELEASE_DIR)/include/ \
+			-I$(BUILD_OUT_DIR)/platform/include \
+			-I$(RELEASE_DIR)/include/json-c/ \
+			-I$(COMMON_INC_DIR)/ \
+			-I./
+
+INCLUDES_CPP = 	-I$(RELEASE_DIR)/include/ \
+				-I$(BUILD_OUT_DIR)/platform/include \
+				-I$(COMMON_INC_DIR)/ \
+				-I./
+
+CFLAGS := $(subst -Werror, ,$(CFLAGS))
+CFLAGS += -O2 -Wall  -Wstrict-prototypes -fPIC  -g  -fomit-frame-pointer -pipe 
+
+APP_TARGET := multipart
+
+LIBS :=
+
+OBJS := multi_partparser.o multipart_test.o
+
+install all release debug: $(APP_TARGET)
+
+multi_partparser.o: multi_partparser.cpp
+	$(CXX) -c $(CXXFLAGS)  $(INCLUDES_CPP) -o $@ $<
+
+multipart_test.o: multipart_test.c
+	$(CXX) -c $(CXXFLAGS)  $(INCLUDES_CPP) -o $@ $<
+
+$(APP_TARGET):$(OBJS)
+	$(CXX) $(CFLAGS) $(INCLUDES) $(OBJS) $(LIBS) -o $@
+
+clean:
+	$(RM) -r *.o $(OBJ_DIR) $(APP_TARGET)
+
+distclean:
+	$(RM) -r *.o  $(OBJ_DIR)
+
+-include $(DEPS)

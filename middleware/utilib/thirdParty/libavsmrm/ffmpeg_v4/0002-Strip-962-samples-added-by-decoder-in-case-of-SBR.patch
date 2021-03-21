@@ -1,0 +1,35 @@
+Subject: [PATCH 2/4] Strip 962 samples added by decoder in case of SBR
+
+---
+ libavcodec/aacdec_template.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/libavcodec/aacdec_template.c b/libavcodec/aacdec_template.c
+index cf97181..ab0933f 100644
+--- a/libavcodec/aacdec_template.c
++++ b/libavcodec/aacdec_template.c
+@@ -3122,6 +3122,7 @@ static int aac_decode_frame_int(AVCodecContext *avctx, void *data,
+     int samples = 0, multiplier, audio_found = 0, pce_found = 0;
+     int is_dmono, sce_count = 0;
+     int payload_alignment;
++    int old_sbr = ac->oc[1].m4ac.sbr;
+ 
+     ac->frame = data;
+ 
+@@ -3265,6 +3266,13 @@ static int aac_decode_frame_int(AVCodecContext *avctx, void *data,
+     multiplier = (ac->oc[1].m4ac.sbr == 1) ? ac->oc[1].m4ac.ext_sample_rate > ac->oc[1].m4ac.sample_rate : 0;
+     samples <<= multiplier;
+ 
++    if (avctx->wha_version >= 0) {
++        if ((old_sbr != ac->oc[1].m4ac.sbr || avctx->frame_number == 0) && ac->oc[1].m4ac.sbr == 1) {
++            avctx->internal->skip_samples += 481 << multiplier;
++            av_log(avctx, AV_LOG_DEBUG, "SBR detected, skip %d samples\n", avctx->internal->skip_samples);
++        }
++    }
++
+     spectral_to_sample(ac, samples);
+ 
+     if (ac->oc[1].status && audio_found) {
+-- 
+2.7.4
+

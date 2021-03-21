@@ -1,0 +1,9 @@
+src/ssdp/libupnp_la-ssdp_device.lo: src/ssdp/ssdp_device.c \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ src/inc/config.h ../autoconfig.h
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h:
+
+src/inc/config.h:
+
+../autoconfig.h:

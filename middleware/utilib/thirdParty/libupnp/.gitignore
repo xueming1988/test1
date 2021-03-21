@@ -1,0 +1,5 @@
+Makefile.in
+aclocal.m4
+autoconfig.h.in~
+configure
+libupnp-1.6.15/m4

@@ -1,0 +1,181 @@
+#ifndef ALEXA_CLIENT_SDK_KWD_DSP_KEY_WORD_DETECTOR_H_
+#define ALEXA_CLIENT_SDK_KWD_DSP_KEY_WORD_DETECTOR_H_
+
+#include <atomic>
+#include <string>
+#include <thread>
+#include <unordered_map>
+#include <unordered_set>
+
+#include <AVSCommon/Utils/AudioFormat.h>
+#include <AVSCommon/AVS/AudioInputStream.h>
+#include <AVSCommon/SDKInterfaces/KeyWordObserverInterface.h>
+#include <AVSCommon/SDKInterfaces/KeyWordDetectorStateObserverInterface.h>
+
+#include "KWD/AbstractKeywordDetector.h"
+
+#include "awelib.h"
+#include "AMLogic_VUI_Solution_Model.h"
+#include "TcpIO2.h"
+
+namespace alexaClientSDK {
+namespace kwd {
+
+class DSPKeyWordDetector : public AbstractKeywordDetector {
+public:
+    /**
+     * The configuration used by the DSPKeyWordDetector to set up keywords to be notified of.
+     */
+    struct DSPConfiguration {
+        /// The path to the keyword model.
+        std::string modelFilePath;
+
+        /// The keyword.
+        std::string keyword;
+
+        /**
+         * The sensitivity that the user wishes to be associated with the keyword. This should be a value between 0 and
+         * 1. The higher this is, the more keyword detections will occur. However, more false alarms might also occutop dhcpcd
+         *
+         * more frequently. @see https://github.com/Kitt-AI/snowboy for more information regarding this.
+         */
+        double sensitivity;
+    };
+
+    /**
+     * Creates a @c KittAiKeyWordDetector.
+     *
+     * @param stream The stream of audio data. This should be formatted in LPCM encoded with 16 bits per sample and
+     * have a sample rate of 16 kHz. Additionally, the data should be in little endian format.
+     * @param audioFormat The format of the audio data located within the stream.
+     * @param keyWordObservers The observers to notify of keyword detections.
+     * @param keyWordDetectorStateObservers The observers to notify of state changes in the engine.
+     * @param resourceFilePath The path to the resource file.
+     * @param kittAiConfigurations A vector of @c KittAiConfiguration objects that will be used to initialize the
+     * engine and keywords.
+     * @param audioGain This controls whether to increase (>2) or decrease (<1) input volume.
+     * @param applyFrontEnd Whether to apply frontend audio processing.
+     * @param msToPushPerIteration The amount of data in milliseconds to push to Kitt.ai at a time. Smaller sizes will
+     * lead to less delay but more CPU usage. Additionally, larger amounts of data fed into the engine per iteration
+     * might lead longer delays before receiving keyword detection events. This has been defaulted to 20 milliseconds
+     * as it is a good trade off between CPU usage and recognition delay.
+     * @return A new @c KittAiKeyWordDetector, or @c nullptr if the operation failed.
+     * @see https://github.com/Kitt-AI/snowboy for more information regarding @c audioGain and @c applyFrontEnd.
+     */
+    static std::unique_ptr<DSPKeyWordDetector> create(
+            std::shared_ptr<avsCommon::avs::AudioInputStream> stream,
+            avsCommon::utils::AudioFormat audioFormat,
+            std::unordered_set<std::shared_ptr<avsCommon::sdkInterfaces::KeyWordObserverInterface>> keyWordObservers,
+            std::unordered_set<std::shared_ptr<avsCommon::sdkInterfaces::KeyWordDetectorStateObserverInterface>>
+                keyWordDetectorStateObservers,
+            const std::string& resourceFilePath,
+            const std::vector<DSPConfiguration> DSPConfigurations,
+            float audioGain,
+            bool applyFrontEnd,
+			std::chrono::milliseconds msToPushPerIteration = std::chrono::milliseconds(20));
+
+    /**
+     * Destructor.
+     */
+    ~DSPKeyWordDetector();
+
+    //later on make these as private members to be used only for pAwelib
+    //UINT32 inCount = 0;
+    //UINT32 outCount = 0;
+    //UINT32 in_samps = 0;
+    //UINT32 in_chans = 0;
+    //UINT32 out_samps = 0;
+    //UINT32 out_chans = 0;
+
+    void notifyDetection(uint64_t startIndex , uint64_t endIndex);
+
+private:
+
+    //CAWELib *pAwelib;
+
+    /**
+     * Constructor.
+     *
+     * @param stream The stream of audio data. This should be formatted in LPCM encoded with 16 bits per sample and
+     * have a sample rate of 16 kHz. Additionally, the data should be in little endian format.
+     * @param audioFormat The format of the audio data located within the stream.
+     * @param keyWordObservers The observers to notify of keyword detections.
+     * @param keyWordDetectorStateObservers The observers to notify of state changes in the engine.
+     * @param resourceFilePath The path to the resource file.
+     * @param kittAiConfigurations A vector of @c KittAiConfiguration objects that will be used to initialize the
+     * engine and keywords.
+     * @param audioGain This controls whether to increase (>1) or decrease (<1) input volume.
+     * @param applyFrontEnd Whether to apply frontend audio processing.
+     * @param msToPushPerIteration The amount of data in milliseconds to push to Kitt.ai at a time. Smaller sizes will
+     * lead to less delay but more CPU usage. Additionally, larger amounts of data fed into the engine per iteration
+     * might lead longer delays before receiving keyword detection events. This has been defaulted to 20 milliseconds
+     * as it is a good trade off between CPU usage and recognition delay.
+     * @see https://github.com/Kitt-AI/snowboy for more information regarding @c audioGain and @c applyFrontEnd.
+     */
+
+    // SB create should be enough , AWELIB does not seem to have a constructor
+    DSPKeyWordDetector(
+            std::shared_ptr<avsCommon::avs::AudioInputStream> stream,
+            avsCommon::utils::AudioFormat audioFormat,
+            std::unordered_set<std::shared_ptr<avsCommon::sdkInterfaces::KeyWordObserverInterface>> keyWordObservers,
+            std::unordered_set<std::shared_ptr<avsCommon::sdkInterfaces::KeyWordDetectorStateObserverInterface>>
+                keyWordDetectorStateObservers,
+            const std::string& resourceFilePath,
+            const std::vector<DSPConfiguration> DSPConfigurations,
+            float audioGain,
+            bool applyFrontEnd,
+            std::chrono::milliseconds msToPushPerIteration = std::chrono::milliseconds(20));
+
+    /**
+     * Initializes the stream reader and kicks off a thread to read data from the stream. This function should only be
+     * called once with each new @c KittAiKeyWordDetector.
+     *
+     * @param audioFormat The format of the audio data located within the stream.
+     * @return @c true if the engine was initialized properly and @c false otherwise.
+     */
+    bool init(avsCommon::utils::AudioFormat audioFormat);
+
+    /**
+     * Checks to see if an @c avsCommon::utils::AudioFormat is compatible with Kitt.ai.
+     *
+     * @param audioFormat The audio format to check.
+     * @return @c true if the audio format is compatible and @c false otherwise.
+     */
+    // SB bool isAudioFormatCompatibleWithKittAi(avsCommon::utils::AudioFormat audioFormat);
+
+    /// The main function that reads data and feeds it into the engine.
+    void detectionLoop();
+
+    /// Indicates whether the internal main loop should keep running.
+    std::atomic<bool> m_isShuttingDown;
+
+    /**
+     * The Kitt.ai engine emits a number to indicate which keyword was detected. The number corresponds to the model
+     * passed in. Since we can pass in multiple models, it's up to us to keep track which return value corrresponds to
+     * which keyword. This map maps each keyword to a return value.
+     */
+    // SB std::unordered_map<unsigned int, std::string> m_detectionResultsToKeyWords;
+
+    /// The stream of audio data.
+    const std::shared_ptr<avsCommon::avs::AudioInputStream> m_stream;
+
+    /// The reader that will be used to read audio data from the stream.
+    std::shared_ptr<avsCommon::avs::AudioInputStream::Reader> m_streamReader;
+
+    /// Internal thread that reads audio from the buffer and feeds it to the Kitt.ai engine.
+    std::thread m_detectionThread;
+
+    /// The Kitt.ai engine instantiation.
+    //SB std::unique_ptr<snowboy::SnowboyDetect> m_kittAiEngine;
+
+    /**
+     * The max number of samples to push into the underlying engine per iteration. This will be determined based on the
+     * sampling rate of the audio data passed in.
+     */
+    const size_t m_maxSamplesPerPush;
+};
+
+} // namespace kwd
+} // namespace alexaClientSDK
+
+#endif // ALEXA_CLIENT_SDK_KWD_KITT_AI_INCLUDE_KWD_KITT_AI_KEY_WORD_DETECTOR_H_

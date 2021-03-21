@@ -1,0 +1,61 @@
+From 442d296fe54ee6c0c3abcb77eb26a0fef8f9ddb7 Mon Sep 17 00:00:00 2001
+From: Philipp Hasper <vcs@hasper.info>
+Date: Thu, 11 Feb 2016 08:05:29 +0100
+Subject: [PATCH 1/1] HEAD request handler for C++ interface
+
+---
+ include/CivetServer.h |  9 +++++++++
+ src/CivetServer.cpp   | 10 ++++++++++
+ 2 files changed, 19 insertions(+)
+
+diff --git a/include/CivetServer.h b/include/CivetServer.h
+index 95d0923..dea9a95 100644
+--- a/include/CivetServer.h
++++ b/include/CivetServer.h
+@@ -47,6 +47,15 @@ public:
+      */
+     virtual bool handlePost(CivetServer *server, struct mg_connection *conn);
+ 
++	/**
++	 * Callback method for HEAD request.
++	 *
++	 * @param server - the calling server
++	 * @param conn - the connection information
++	 * @returns true if implemented, false otherwise
++	 */
++	virtual bool handleHead(CivetServer *server, struct mg_connection *conn);
++
+     /**
+      * Callback method for PUT request.
+      *
+diff --git a/src/CivetServer.cpp b/src/CivetServer.cpp
+index 5acb03b..255cf71 100644
+--- a/src/CivetServer.cpp
++++ b/src/CivetServer.cpp
+@@ -28,6 +28,14 @@ bool CivetHandler::handlePost(CivetServer *server, struct mg_connection *conn)
+     return false;
+ }
+ 
++bool
++CivetHandler::handleHead(CivetServer *server, struct mg_connection *conn)
++{
++    UNUSED_PARAMETER(server);
++    UNUSED_PARAMETER(conn);
++    return false;
++}
++
+ bool CivetHandler::handlePut(CivetServer *server, struct mg_connection *conn)
+ {
+     UNUSED_PARAMETER(server);
+@@ -59,6 +67,8 @@ int CivetServer::requestHandler(struct mg_connection *conn, void *cbdata)
+             return handler->handleGet(me, conn) ? 1 : 0;
+         } else if (strcmp(request_info->request_method, "POST") == 0) {
+             return handler->handlePost(me, conn) ? 1 : 0;
++        } else if (strcmp(request_info->request_method, "HEAD") == 0) {
++            return handler->handleHead(me, conn) ? 1 : 0;
+         } else if (strcmp(request_info->request_method, "PUT") == 0) {
+             return handler->handlePut(me, conn) ? 1 : 0;
+         } else if (strcmp(request_info->request_method, "DELETE") == 0) {
+-- 
+2.7.4
+

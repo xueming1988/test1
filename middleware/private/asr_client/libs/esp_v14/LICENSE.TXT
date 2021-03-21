@@ -1,0 +1,14 @@
+Copyright 2017 Amazon.com, Inc. or its affiliates.  All Rights Reserved. 
+
+These materials are licensed as "Program Materials" under the Program Materials License Agreement (the "Agreement") in connection with the Alexa Voice Service Program.  The Agreement is available at https://developer.amazon.com/public/support/pml.html.  See the Agreement for the specific terms and conditions of the Agreement.  Capitalized terms not defined in this file have the meanings given to them in the Agreement.  
+
+In addition to the terms and conditions of the Agreement, the following terms and conditions apply to these materials.  In the event of a conflict between the terms and conditions of the Agreement and those of this file, the terms and conditions of this file will apply.
+
+1.  These materials may only be used in connection with the Alexa Voice Service Program.
+
+2. You may modify or create derivative works of these materials, but only to the extent necessary to port the materials to function on Your Products.  To the extent you are a subcontractor and are using these materials on behalf of a third party, "Your Products" is restricted to the third party's products that work with the Alexa Voice Service Program.  
+
+3.  These materials and modifications or derivatives thereof (collectively, "Licensed Materials") may be distributed in binary form only: (a) as pre-loaded on Your Products that include or facilitate access to the Alexa Voice Service; or (b) as included in a software update transmitted only to Your Products that include or facilitate access to the Alexa Voice Service.  The Licensed Materials may only be used to detect the presence or absence of human voice on an input audio interaction with the Alexa Voice Service and to communicate such presence or absence to the Alexa Voice Service to facilitate the ESP (Echo Spatial Perception) feature. “Alexa Voice Service” means Amazon’s proprietary, cloud-based voice service referred to as “Alexa,” “Alexa Voice Service,” or “AVS”. 
+
+4.  These materials and all related documentation are Amazon confidential information (“Confidential Information”).  You agree that: (a) you will use Confidential Information only as is reasonably necessary for your use of these materials in accordance with the terms of the Agreement and this file; (b) you will not disclose Confidential Information to any individual, company, or other third party (except that the materials may be distributed in binary form as expressly provided in the Agreement and this file); and (c) you will take all reasonable measures to protect Confidential Information against any use or disclosure that is not expressly permitted by Amazon.
+

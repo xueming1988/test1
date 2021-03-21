@@ -1,0 +1,13 @@
+src/uuid/libupnp_la-md5.lo: src/uuid/md5.c \
+ /home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ src/inc/config.h ../autoconfig.h src/inc/global.h src/inc/md5.h
+
+/home/liang/work/a98_prj/platform/amlogic/a113/toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h:
+
+src/inc/config.h:
+
+../autoconfig.h:
+
+src/inc/global.h:
+
+src/inc/md5.h:
